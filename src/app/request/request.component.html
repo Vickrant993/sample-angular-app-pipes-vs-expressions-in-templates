@@ -1,0 +1,12 @@
+<!-- <h2>Microsoft Data</h2> -->
+<!-- <pre>{{ microsoftModel | json }}</pre> -->
+
+<!-- <h2>Google Data</h2> -->
+<!-- <pre>{{ google$ | async | json }}</pre> -->
+<h2>Data:</h2>
+
+<button type="button" (click)="sortAsc()">Sort ASC</button>
+<button type="button" (click)="sortDec()">Sort DEC</button>
+<div *ngFor="let i of data">
+  {{ i.name }}
+</div>
